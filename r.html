@@ -1,14 +1,17 @@
 ---
 layout: default
+permalink: /R/
 ---
+
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">R</h1>
 
   <ul class="post-list">
 
 
     {% for post in site.posts %}
+      {% if post.tags contains 'R' %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -16,7 +19,11 @@ layout: default
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
       </li>
+      {% endif %}
     {% endfor %}
+
+
+
   </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

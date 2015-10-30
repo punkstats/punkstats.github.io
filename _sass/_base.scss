@@ -1,6 +1,12 @@
 /**
  * Reset some basic elements
  */
+html {
+  background-color: $brand-dark;
+  height: 100%;
+  width: 100%;
+}
+
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -19,8 +25,12 @@ body {
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
-    background-color: $background-color;
+    background-color: $brand-dark;
     -webkit-text-size-adjust: 100%;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    position: absolute;
 }
 
 
@@ -81,6 +91,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
+    font-family: $title-font-family;
 }
 
 
@@ -89,16 +100,17 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $brand-light;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        font-weight: 500;
+        color: white;
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: $brand-light;
+        text-decoration: none;
     }
 }
 
@@ -130,7 +142,7 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: $brand-secondary;
 }
 
 code {

@@ -2,13 +2,54 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
+    border-top: 3px solid $brand-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+
+
 }
+
+.main-container {
+  background-color: $background-color;
+}
+
+.side-container {
+  padding: 0 20px;
+  border-top: 3px solid $brand-dark;
+}
+
+aside {
+
+  border-right: 3px $brand-dark solid;
+  margin-left: -3px;
+  background-color: $brand-color;
+  color: white;
+  ul {
+    list-style: none;
+    font-size: 20px;
+    a {
+      color: white
+    }
+
+    &:first-of-type li {
+      font-family: $title-font-family;
+      color: white;
+   }
+     &:first-of-type ul {
+      font-size: 18px;
+      font-weight: 100;
+
+      li {
+        font-family: $base-font-family;
+        color: white;
+      }
+    }
+  }
+}
+
 
 .site-title {
     font-size: 26px;
@@ -19,13 +60,14 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $brand-dark;
     }
 }
 
 .site-nav {
     float: right;
     line-height: 56px;
+    background: white;
 
     .menu-icon {
         display: none;
@@ -64,7 +106,7 @@
                 height: 15px;
 
                 path {
-                    fill: $grey-color-dark;
+                    fill: $brand-dark;
                 }
             }
         }
@@ -85,6 +127,8 @@
         }
     }
 }
+
+
 
 
 

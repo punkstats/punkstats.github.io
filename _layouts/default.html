@@ -4,16 +4,22 @@
   {% include head.html %}
 
   <body>
+    <aside class="side-nav col-2 full-height">
+      {% include sidenav.html %}
+    </aside>
 
-    {% include header.html %}
+    <div class="col-8 full-height main-container">
+      {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+      <div class="page-content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
       </div>
-    </div>
 
-    {% include footer.html %}
+      {% include footer.html %}
+
+    </div>
 
   </body>
 
