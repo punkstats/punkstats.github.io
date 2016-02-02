@@ -4,7 +4,7 @@ $( document ).ready(function() {
     $(".main-container").animate({
       width: "80%"
     }, 500, function() {
-      
+      $(".menu-icon").fadeOut();
     })
 
     $("aside").animate({
@@ -19,7 +19,7 @@ $( document ).ready(function() {
     $(".main-container").animate({
       width: "100%"
     }, 500, function() {
-      
+      $(".menu-icon").fadeIn();
     })
 
     $("aside").animate({
