@@ -2,30 +2,51 @@
  * Site header
  */
 .site-header {
-    border-top: 3px solid $brand-dark;
+    border-top: 3px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+}
 
-
+.nav-block {
+  margin-bottom: 10px;
 }
 
 .main-container {
-  background-color: $background-color;
+    background-color: $background-color;
+    padding: 0 30px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+  a:visited {
+    color: $brand-dark;
+  }
 }
 
 .side-container {
   padding: 0 20px;
-  border-top: 3px solid $brand-dark;
+  padding-top: 20px;
+  border-top: 3px solid $grey-color-dark;
+}
+
+.close-icon {
+  padding: 10px;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 0;
+  right: 0;
+  cursor: pointer;
 }
 
 aside {
 
-  border-right: 3px $brand-dark solid;
+  border-right: 3px $grey-color-dark solid;
   margin-left: -3px;
-  background-color: $brand-color;
+  background-color: $grey-color;
   color: white;
   ul {
     list-style: none;

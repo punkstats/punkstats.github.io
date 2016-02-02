@@ -14,23 +14,30 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
+// Light green: 1ED760
+// Almost white FAFAFA
+// Dark green: 26 189 83
+// Dark grey: #282828
+// Dark steel: #181818
+
 $text-color:       #111;
-$background-color: #fdfdfd;
-$brand-dark:       #193C4A;
-$brand-color:      #2B69A7;
-$brand-light:      #08B1EB;
-$brand-secondary:  #E7DBC2;
+$background-color: #fafafa;
+$brand-dark:       rgb(26,189,83); // Dark backgroud used in the HTML
+$brand-color:      #1ED760; // Dark color on the left nav
+$brand-light:      #1ED760; // Light brand color used on titles
+$brand-secondary:  #E7DBC2; //
 
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color:       #282828;
+$grey-color-light: lighten($grey-color, 60%);
+$grey-color-dark:  #181818;
 
 // Width of the content area
 $content-width:    100%;
 
 $on-palm:          600px;
 $on-laptop:        800px;
+
 
 
 

@@ -1,15 +1,19 @@
 ---
 layout: default
-permalink: /data-science/
+permalink: /getting-started/
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Data Science</h1>
+  <h1 class="page-heading">The getting started series</h1>
+  <p>This series covers what you'll need to get started on your system. We'll be covering things like installing an environment, using the terminal and the basics of the tools that you'll be using</p>
+  
 
   <ul class="post-list">
+
+
     {% for post in site.posts %}
-      {% if post.categories contains 'Data Science'  %}
+      {% if post.category contains 'Getting Started' %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -19,6 +23,9 @@ permalink: /data-science/
       </li>
       {% endif %}
     {% endfor %}
+
+
+
   </ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
