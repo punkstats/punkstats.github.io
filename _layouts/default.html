@@ -1,25 +1,16 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
-<html>
-
-  {% include head.html %}
-
-  <body>
-    <aside class="side-nav col-2 full-height">
-      {% include sidenav.html %}
-    </aside>
-
-    <div class="col-8 full-height main-container">
-      <img class="menu-icon" src="/assets/ic_menu_black_36px.svg" alt="" />
-      <div class="page-content">
-        <div class="wrapper">
-          {{ content }}
-        </div>
-      </div>
-
-      <!-- {% include footer.html %} -->
-
-    </div>
-
-  </body>
-
+<html lang="pt-br">
+    {% include head.html %}
+    <body>
+        {% include svg-icons.html %}
+        {% include header-default.html %}
+            <section class="content">
+                {{ content }}
+            </section>
+        {% include footer.html %}
+    </body>
 </html>
